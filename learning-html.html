@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <a href="index.html">Strona główna</a>
+            <a href="learning-html.html">Nauka HTML</a>
+            <a href="CSS.html">Ściąga z CSS</a>
+            <a href="JS.html">Nauka JavaScript</a>
+            <a href="links.html">Przydatne linki</a>
+        </nav>
+    </header>
+
+    <main>
+        <header id="top">
+            <h1 class="main-heading"><b>Nauka HTML-a</b></h1>
+            <img src="html.jpg" alt="logo HTML" width="300" height="300" />
+        </header>
+
+        <section id="table-of-contents">
+            <h2 class="secondary-heading">SPIS TREŚCI</h2>
+            <p><a href="#entities">Encje - znaki specjalne w HTML</a></p>
+            <p><a href="#enumerations">Punktowanie i numeracja w HTML</a></p>
+            <p><a href="#footnotes">Luźne notatki</a></p>
+        </section>
+
+        <section id="entities">
+            <h2 class="secondary-heading">ENCJE (ang. entities) - znaki specjalne w HTML-u</h2>
+            <article>
+                <h3>BUDOWA ZNAKU</h3>
+                <p>Każdy znak specjalny rozpoczyna się od ampersand "&", a kończy średnikiem ";"</p>
+            </article>
+
+            <article>
+                <h3>SYMBOLE</h3>
+                <h4>Symbole karciane</h4>
+                <p>Symbol pik &spades; to &amp;spades;</p>
+                <p>Symbol trefl &clubs; to &amp;clubs;</p>
+                <p>Symbol kier &hearts; to &amp;hearts;</p>
+                <p>Symbol karo &diams; to &amp;diams;</p>
+            </article>
+
+            <article>
+                <h3>ZNAKI ISO 8859-1 (LATIN-1)</h3>
+                <p>Znak praw autorskich &copy; to &amp;copy;</p>
+            </article>
+
+            <article>
+                <h3>ZNAKI MIĘDZYNARODOWE</h3>
+                <p>&lt; to &amp;lt;</p>
+                <p>&gt; to &amp;gt;</p>
+                <p>&amp; to &amp;amp;</p>
+            </article>
+
+            <article>
+                <h3>EMOJI</h3>
+                <p>Szeroko uśmiechnięta twarz &#128512; to &amp;#128512;</p>
+                <p>Twarz "do góry nogami" &#128579; to &amp;128579;</p>
+                <p>Twarz mrugająca oczkiem &#128521; to &amp;#128521;</p>
+                <p>Uśmiechnięta twarz w okularach przeciwsłonecznych &#128526; to &amp;#128526;</p>
+            </article>
+            <p><a href="#table-of-contents"><i>Wróć do Spisu treści</i></a></p>
+        </section>
+
+        <section id="enumerations">
+            <h2 class="secondary-heading">Punktowanie i numeracja w HTML</h2>
+            <article>
+                <h3>PUNKTOWANIE - lista nieuporządkowana (ang. unordered list)</h3>
+                <h4>Znacznik &lt;ul&gt;</h4>
+                <p>&lt;ul&gt;<br>
+                    &lt;li&gt;tekst 1&lt;/li&gt;<br>
+                    &lt;li&gt;tekst 2&lt;/li&gt;<br>
+                    &lt;/ul&gt;</p>
+                <p>Przykład:</p>
+                <ul class="unordered-list">
+                    <li>Kropka 1</li>
+                    <li>Kropka 2</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>NUMERACJA - lista uporządkowana (ang. ordered list)</h3>
+                <h4>Znacznik &lt;ol&gt;</h4>
+                <p>&lt;ol&gt;<br>
+                    &lt;li&gt;tekst 1&lt;/li&gt;<br>
+                    &lt;li&gt;tekst 2&lt;/li&gt;<br>
+                    &lt;/ol&gt;</p>
+                <p>Przykład:</p>
+                <ol class="ordered-list">
+                    <li>Punkt 1</li>
+                    <li>Punkt 2</li>
+                </ol>
+                <h4>Typy numeracji</h4>
+                <p>&lt;ol type="rodzaj numeracji"&gt;<br>
+                    &lt;li>Punkt pierwszy&lt;/li&gt;<br>
+                    &lt;li>Punkt drugi&lt;/li&gt;<br>
+                    &lt;li>Punkt trzeci&lt;/li&gt;<br>
+                    &lt;/ol&gt;</p>
+                <p>"rodzaj numeracji":<br>
+                    "1" (domyślny) - numeracja według liczb arabskich<br>
+                    "I" - według dużych liczb rzymskich<br>
+                    "i" - według małych liczb rzymskich<br>
+                    "a" - według małych liter<br>
+                    "A" - według dużych liter</p>
+                <p>Przykład:</p>
+                &lt;ol type="A"&gt;<br>
+                <ol class="ordered-list" type="A">
+                    <li>tekst 1</li>
+                    <li>tekst 2</li>
+                </ol>
+            </article>
+            <p><a href="#table-of-contents"><i>Wróć do Spisu treści</i></a></p>
+        </section>
+
+        <section id="footnotes">
+            <h2 class="secondary-heading">Luźne notatki</h2>
+            <h3>Nagłówki</h3>
+            <p>Nie piszemy nagłówka pod nagłówkiem, podtytuł robimy używając &lt;p&gt;</p>
+            <p><a href="#table-of-contents"><i>Wróć do Spisu treści</i></a></p>
+        </section>
+        </main>
+
+    <footer>
+    &copy; 2020 Strona domowa Anny Jarosz.  Wszystkie treści są efektem udziału w szkoleniu "WTF: Co ten frontend" Macieja
+        Korsana. <a href="#top">Wróć na górę strony</a>
+    </footer>
+</body>
+
+</html>

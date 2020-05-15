@@ -1,0 +1,63 @@
+body {
+    background: #FFF2FF;
+}
+
+.header {
+    font-size: 18px;
+    font-style: oblique; 
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #624158;
+}
+
+.main-heading {
+    font-style: italic;
+    color: #E32080;
+}
+
+.secondary-heading {
+    color: #861388;
+}
+
+.notes-header {
+    color:#BD1862;
+}
+
+h3 {
+    color: #97EAD2;
+}
+
+h4 {
+    color: #4B2840;
+}
+
+h5 {
+    color: #C799A6;
+}
+
+h6 {
+    color: #5C0A60;
+
+}
+
+p  {
+    color: #8F7488;
+}
+
+footer {
+    font-style: italic;
+    color: gray;    
+}
+
+a {
+    color: #861388;
+}
+
+
+.unordered-list {
+    color: #8F7488;
+}
+
+.ordered-list {
+    color: #8F7488;
+}
